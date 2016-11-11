@@ -1,0 +1,4 @@
+#compdef get_cbk
+cd ~/workspace/Chef/cookbooks
+git clone gitolite@git.aligntech.com:chef/cookbooks/$1.git
+cd $1

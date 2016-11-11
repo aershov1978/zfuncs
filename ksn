@@ -1,0 +1,4 @@
+#compdef ksn
+cd ~
+knife search node "chef_env*:$1 AND recipe:*$2*" -i;
+cd - >/dev/null

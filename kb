@@ -1,0 +1,4 @@
+#compdef kb
+cd ~
+knife block $1;
+cd - >/dev/null
