@@ -1,0 +1,4 @@
+#compdef ksni
+cd ~
+knife search node "ipaddress:$1" -i;
+cd - >/dev/null

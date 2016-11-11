@@ -1,4 +1,5 @@
 #compdef ksn
 cd ~
-knife search node "chef_env*:$1 AND recipe:*$2*" -i;
+envupper=`echo $1 | tr '[:lower:]' '[:upper:]'`
+knife search node "chef_env*:$envupper AND recipe:*$2*" -i;
 cd - >/dev/null

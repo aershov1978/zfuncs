@@ -1,0 +1,4 @@
+#compdef kne
+cd ~
+knife node edit $1 -a;
+cd - >/dev/null
