@@ -1,0 +1,6 @@
+#compdef ksn
+cd ~
+envupper=`echo $1 | tr '[:lower:]' '[:upper:]'`
+knife block vault > /dev/null
+knife vault show wso2creds $envupper --format json | ruby -e "require 'json'; puts(JSON.parse(ARGF.read)['users']['$2'])"
+cd - >/dev/null
