@@ -3,4 +3,5 @@ cd ~
 envupper=`echo $1 | tr '[:lower:]' '[:upper:]'`
 knife block vault > /dev/null
 knife vault show wso2creds $envupper --mode client --format json | ruby -e "require 'json'; puts(JSON.parse(ARGF.read)['users']['$2'])"
+knife block itio > /dev/null
 cd - >/dev/null
